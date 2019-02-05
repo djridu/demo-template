@@ -7,7 +7,7 @@ const config = require(pathResolve('build.config.js'));
 const eslint = require(pathResolve('.eslintrc.js'));
 
 module.exports = {
-    collectCoverage: true,
+    collectCoverage: false,
     collectCoverageFrom: [
         'src/**/*.{js,jsx}',
         '!src/**/*.test.{js,jsx}',
@@ -15,6 +15,7 @@ module.exports = {
         '!src/app.js',
         '!src/global-styles.js',
         '!src/*/*/Loadable.{js,jsx}',
+        '!flow-typed/**/*',
     ],
     coverageDirectory: 'coverage',
     coverageReporters: ['json', 'text', 'lcov', 'clover'],
