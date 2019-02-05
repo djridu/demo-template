@@ -1,0 +1,18 @@
+{
+  "app.components.Login.header": "",
+  "components.Footer.author.message": "",
+  "components.Footer.license.message": "",
+  "components.Header.features": "",
+  "components.Header.home": "",
+  "components.Header.logout": "",
+  "containers.FeaturePage.header": "",
+  "containers.FeaturePage.scaffolding.header": "Lorem ipsum",
+  "containers.FeaturePage.scaffolding.message": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,",
+  "containers.HomePage.start_project.header": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+  "containers.HomePage.tryme.atPrefix": "",
+  "containers.HomePage.tryme.header": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+  "containers.HomePage.tryme.message": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+  "containers.LocaleToggle.de": "",
+  "containers.LocaleToggle.en": "",
+  "containers.NotFoundPage.header": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+}

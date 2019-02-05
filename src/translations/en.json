@@ -1,0 +1,18 @@
+{
+  "app.components.Login.header": "This is the Login component!",
+  "components.Footer.author.message": "qwe",
+  "components.Footer.license.message": "qwe",
+  "components.Header.features": "Features",
+  "components.Header.home": "Home",
+  "components.Header.logout": "Logout",
+  "containers.FeaturePage.header": "Features",
+  "containers.FeaturePage.scaffolding.header": "Lorem ipsum dolor.",
+  "containers.FeaturePage.scaffolding.message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor arcu, \n            eleifend sit amet ullamcorper vel, interdum sed sapien. Curabitur iaculis, \n            arcu vitae convallis sollicitudin, felis odio volutpat ipsum, sit.",
+  "containers.HomePage.start_project.header": "Home Page",
+  "containers.HomePage.tryme.atPrefix": "@",
+  "containers.HomePage.tryme.header": "Try me!",
+  "containers.HomePage.tryme.message": "Show Github repositories by",
+  "containers.LocaleToggle.de": "de",
+  "containers.LocaleToggle.en": "en",
+  "containers.NotFoundPage.header": "Page not found."
+}

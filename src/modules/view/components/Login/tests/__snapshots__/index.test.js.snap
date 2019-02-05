@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Login /> Should render and match the snapshot 1`] = `
+<div
+  class="Container-sc-7dyfqj-0 dFxklx"
+>
+  <div
+    class="Grid__Grid-bojwg dVngpS"
+  >
+    <div
+      class="Cell__Cell-jsYrZv cOetvE"
+    >
+      <h1>
+        Header
+      </h1>
+    </div>
+    <div
+      class="Cell__Cell-jsYrZv TpYWU"
+    >
+      <div
+        class="LoginWrapper-sc-7dyfqj-1 daTQUk"
+      >
+        <header
+          class="LoginHeader-sc-7dyfqj-2 fDmaJX"
+        >
+          <p
+            class="LoginHeading-sc-7dyfqj-3 cTgkyy"
+          >
+            Sign In
+          </p>
+        </header>
+        <div
+          class="LoginBody-sc-7dyfqj-4 fYFufT"
+        >
+          <fieldset
+            class="LoginFieldset-sc-7dyfqj-5 cRhLmR"
+          >
+            <input
+              class="LoginInput-sc-7dyfqj-6 dyoVMa"
+              placeholder="E-mail"
+              required=""
+              type="text"
+            />
+          </fieldset>
+          <fieldset
+            class="LoginFieldset-sc-7dyfqj-5 cRhLmR"
+          >
+            <input
+              class="LoginInput-sc-7dyfqj-6 dyoVMa"
+              placeholder="Password"
+              required=""
+              type="password"
+            />
+          </fieldset>
+          <fieldset
+            class="LoginFieldset-sc-7dyfqj-5 cRhLmR"
+          >
+            <a
+              class="LoginButton-sc-7dyfqj-8 hDwIps"
+              href="/home"
+            >
+              Login
+            </a>
+          </fieldset>
+          <fieldset
+            class="LoginFieldset-sc-7dyfqj-5 cRhLmR"
+          >
+            <p
+              class="LoginOptionsNote-sc-7dyfqj-7 iowyjN"
+            >
+              Don't have account?
+            </p>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <div
+      class="Cell__Cell-jsYrZv hGsICH"
+    >
+      <p>
+        Footer
+      </p>
+    </div>
+  </div>
+</div>
+`;

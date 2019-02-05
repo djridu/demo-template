@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RepoListItem /> should render a ListItem 1`] = `
+<li
+  class="Wrapper-sc-13q16mz-0 leTiDt"
+>
+  <div
+    class="Item-sc-5ovnd9-0 iulbmv"
+  >
+    <div
+      class="Wrapper-sc-49of17-0 iHaIWv"
+    >
+      <a
+        class="A-sc-80v4a3-0 RepoLink-sc-1c54hc0-0 kTKldA"
+        href="https://github.com/gaearon/overreacted.io"
+        target="_blank"
+      >
+        gaearon/overreacted.io
+      </a>
+      <a
+        class="A-sc-80v4a3-0 IssueLink-dd8jjr-0 qhrOw"
+        href="https://github.com/gaearon/overreacted.io/issues"
+        target="_blank"
+      >
+        <svg
+          class="IssueIcon-sc-1po0dxw-0 cpGJTU"
+          height="1em"
+          width="0.875em"
+        >
+          <path
+            d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7S10.14 13.7 7 13.7 1.3 11.14 1.3 8s2.56-5.7 5.7-5.7m0-1.3C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7S10.86 1 7 1z m1 3H6v5h2V4z m0 6H6v2h2V10z"
+          />
+        </svg>
+        <span>
+          20
+        </span>
+      </a>
+    </div>
+  </div>
+</li>
+`;
