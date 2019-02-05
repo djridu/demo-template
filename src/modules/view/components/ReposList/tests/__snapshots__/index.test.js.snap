@@ -8,24 +8,44 @@ exports[`<ReposList /> should render the loading indicator when its loading 1`] 
     class="Ul-sc-1xki5lr-0 kTFOEa"
   >
     <div
-      class="Wrapper-sc-1hmrodm-0 jMRZW"
+      class="Wrapper-sc-1o4s62-0 bqsESx"
     >
-      <svg
-        class="StyledSpinner-sc-1hmrodm-2 eRLTdo"
-        height="65px"
-        viewBox="0 0 66 66"
-        width="65px"
-      >
-        <circle
-          class="StyledCircle-sc-1hmrodm-1 hFRbcg"
-          cx="33"
-          cy="33"
-          fill="none"
-          r="30"
-          stroke-linecap="round"
-          stroke-width="6"
-        />
-      </svg>
+      <div
+        class="CirclePrimitive-sc-19bixec-0 brUYtC"
+      />
+      <div
+        class="CirclePrimitive-sc-19bixec-0 ifYfJI"
+      />
+      <div
+        class="CirclePrimitive-sc-19bixec-0 kmdsXj"
+      />
+      <div
+        class="CirclePrimitive-sc-19bixec-0 gJecin"
+      />
+      <div
+        class="CirclePrimitive-sc-19bixec-0 eXfyLs"
+      />
+      <div
+        class="CirclePrimitive-sc-19bixec-0 kqKtam"
+      />
+      <div
+        class="CirclePrimitive-sc-19bixec-0 cdnuHu"
+      />
+      <div
+        class="CirclePrimitive-sc-19bixec-0 eiUDGo"
+      />
+      <div
+        class="CirclePrimitive-sc-19bixec-0 wzsyl"
+      />
+      <div
+        class="CirclePrimitive-sc-19bixec-0 cUjdCN"
+      />
+      <div
+        class="CirclePrimitive-sc-19bixec-0 jGVkxe"
+      />
+      <div
+        class="CirclePrimitive-sc-19bixec-0 inHvvp"
+      />
     </div>
   </ul>
 </div>

@@ -2,7 +2,7 @@
  * Testing our Button component
  */
 
-import React from 'react';
+import * as React from 'react';
 import { cleanup, fireEvent, render } from 'react-testing-library';
 
 import Button from '../index';

@@ -7,23 +7,23 @@ const config = require(pathResolve('build.config.js'));
 const eslint = require(pathResolve('.eslintrc.js'));
 
 module.exports = {
-    collectCoverage: false,
+    collectCoverage: true,
     collectCoverageFrom: [
-        'app/**/*.{js,jsx}',
-        '!app/**/*.test.{js,jsx}',
-        '!app/*/RbGenerated*/*.{js,jsx}',
-        '!app/app.js',
-        '!app/global-styles.js',
-        '!app/*/*/Loadable.{js,jsx}',
+        'src/**/*.{js,jsx}',
+        '!src/**/*.test.{js,jsx}',
+        '!src/*/RbGenerated*/*.{js,jsx}',
+        '!src/app.js',
+        '!src/global-styles.js',
+        '!src/*/*/Loadable.{js,jsx}',
     ],
     coverageDirectory: 'coverage',
     coverageReporters: ['json', 'text', 'lcov', 'clover'],
     coverageThreshold: {
         global: {
-            statements: 98,
-            branches: 91,
-            functions: 98,
-            lines: 98,
+            statements: 90,
+            branches: 90,
+            functions: 90,
+            lines: 90,
         },
     },
     globals: {

@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { cleanup, render } from 'react-testing-library';
 import { FormattedMessage, defineMessages } from 'react-intl';
 import { Provider, ReactReduxContext } from 'react-redux';

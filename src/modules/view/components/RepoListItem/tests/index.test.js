@@ -2,7 +2,7 @@
  * Test the repo list item
  */
 
-import React from 'react';
+import * as React from 'react';
 import { cleanup, getByText, render } from 'react-testing-library';
 import { IntlProvider } from 'react-intl';
 

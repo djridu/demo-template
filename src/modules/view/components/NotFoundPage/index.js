@@ -2,7 +2,7 @@
  * NotFoundPage
  */
 
-import React from 'react';
+import * as React from 'react';
 import { FormattedMessage } from 'react-intl';
 
 import H1 from 'styled-atoms/H1';

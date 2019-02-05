@@ -2,7 +2,7 @@
  * Test the HomePage
  */
 
-import React from 'react';
+import * as React from 'react';
 import { cleanup, render } from 'react-testing-library';
 import { IntlProvider } from 'react-intl';
 

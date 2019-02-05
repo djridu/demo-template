@@ -2,7 +2,7 @@
  * Testing our link component
  */
 
-import React from 'react';
+import * as React from 'react';
 import { render, cleanup } from 'react-testing-library';
 
 import A from '../index';

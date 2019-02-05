@@ -2,7 +2,7 @@
  * app.js
  */
 
-import React from 'react';
+import * as React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider, ReactReduxContext } from 'react-redux';
 import { routerMiddleware, connectRouter } from 'connected-react-router';

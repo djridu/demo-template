@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 import LocaleToggle from 'containers/LocaleToggle';
 import Wrapper from './Wrapper';

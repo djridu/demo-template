@@ -1,10 +1,9 @@
-import React from 'react';
+import * as React from 'react';
 import PropTypes from 'prop-types';
 
 import List from 'styled-atoms/List';
 import ListItem from 'styled-atoms/ListItem';
-// import LoadingIndicator from 'styled-atoms/LoadingIndicator';
-import LoadingIndicator from 'styled-atoms/Spinner';
+import LoadingIndicator from 'styled-atoms/LoadingIndicator';
 import RepoListItem from 'components/RepoListItem';
 
 /**

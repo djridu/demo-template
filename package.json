@@ -22,7 +22,7 @@
         "test:watch": "cross-env NODE_ENV=test jest --watchAll --verbose",
         "test:coverage": "cross-env NODE_ENV=test jest --coverage",
         "test:clear-cache": "jest --clearCache",
-        "test:clean": "rimraf ./coverage npm run test:clear-cache",
+        "test:clean": "rimraf ./coverage && npm run test:clear-cache",
         "lint": "npm run lint:js && npm run lint:styles",
         "lint:js": "eslint --ext .js --ext .jsx src config tools --quiet",
         "lint:styles": "stylelint src/**/*.{js,jsx}",
