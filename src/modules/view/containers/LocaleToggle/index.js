@@ -10,7 +10,7 @@ import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
 
 import Toggle from 'styled-atoms/Toggle';
-import { appLocales } from 'utils/i18n';
+import { appLocales } from 'i18n';
 import { changeLocale } from 'containers/LanguageProvider/actions';
 import { makeSelectLocale } from 'containers/LanguageProvider/selectors';
 import Wrapper from './Wrapper';

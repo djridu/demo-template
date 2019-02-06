@@ -22,7 +22,7 @@ import languageProviderReducer from 'containers/LanguageProvider/reducer';
 import { configureStore } from 'configure-store';
 
 // Import i18n messages
-import { translationMessages } from 'utils/i18n';
+import { translationMessages } from 'i18n';
 
 // Create redux store with history
 const reducers = {
@@ -48,7 +48,7 @@ const render = messages => {
 };
 
 if (module.hot) {
-    module.hot.accept(['utils/i18n', 'containers/App'], () => {
+    module.hot.accept(['i18n', 'containers/App'], () => {
         ReactDOM.unmountComponentAtNode(MOUNT_NODE);
         render(translationMessages);
     });

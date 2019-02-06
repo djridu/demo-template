@@ -6,7 +6,7 @@
 
 import { createReducer } from 'create-immer-reducer';
 
-import { DEFAULT_LOCALE } from 'utils/i18n';
+import { DEFAULT_LOCALE } from 'i18n';
 import { CHANGE_LOCALE } from './constants';
 
 export const initialState = {

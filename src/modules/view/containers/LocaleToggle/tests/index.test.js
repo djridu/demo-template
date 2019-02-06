@@ -6,7 +6,7 @@ import { changeLocale } from 'containers/LanguageProvider/actions';
 import LanguageProvider from 'containers/LanguageProvider';
 import languageProviderReducer from 'containers/LanguageProvider/reducer';
 import { configureStore } from 'configure-store';
-import { translationMessages } from 'utils/i18n';
+import { translationMessages } from 'i18n';
 import LocaleToggle, { mapDispatchToProps } from '../index';
 
 describe('<LocaleToggle />', () => {

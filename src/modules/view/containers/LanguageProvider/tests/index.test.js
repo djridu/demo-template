@@ -5,7 +5,7 @@ import { Provider, ReactReduxContext } from 'react-redux';
 
 import { configureStore } from 'configure-store';
 import languageProviderReducer from 'containers/LanguageProvider/reducer';
-import { translationMessages } from 'utils/i18n';
+import { translationMessages } from 'i18n';
 import ConnectedLanguageProvider, { LanguageProvider } from '../index';
 
 const messages = defineMessages({
