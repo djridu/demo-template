@@ -15,7 +15,16 @@ module.exports = {
         'prettier/react',
         'prettier/standard',
     ],
-    plugins: ['babel', 'flowtype', 'prettier', 'react', 'standard', 'redux-saga', 'jsx-a11y'],
+    plugins: [
+        'react-hooks',
+        'babel',
+        'flowtype',
+        'prettier',
+        'react',
+        'standard',
+        'redux-saga',
+        'jsx-a11y',
+    ],
     env: {
         jest: true,
         browser: true,
@@ -45,6 +54,9 @@ module.exports = {
     },
     rules: {
         'prettier/prettier': ['error', prettierOptions],
+
+        'react-hooks/rules-of-hooks': 'error',
+
         'linebreak-style': ['error', 'windows'],
 
         'arrow-body-style': ['error', 'as-needed'],
