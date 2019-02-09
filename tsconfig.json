@@ -1,0 +1,25 @@
+{
+    "compileOnSave": true,
+    "include": ["src"],
+    "exclude": ["node_modules"],
+    "compilerOptions": {
+        "target": "es6",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "declaration": false,
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "jsx": "preserve",
+        "noLib": false,
+        "suppressImplicitAnyIndexErrors": true,
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true
+    }
+}

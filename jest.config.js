@@ -9,13 +9,11 @@ const eslint = require(pathResolve('.eslintrc.js'));
 module.exports = {
     collectCoverage: false,
     collectCoverageFrom: [
-        'src/**/*.{js,jsx}',
-        '!src/**/*.test.{js,jsx}',
-        '!src/*/RbGenerated*/*.{js,jsx}',
+        'src/**/*.{js,jsx,ts,tsx}',
+        '!src/**/*.d.ts',
+        '!src/**/*.test.{js,jsx,ts,tsx}',
         '!src/app.js',
-        '!src/global-styles.js',
         '!src/*/*/Loadable.{js,jsx}',
-        '!flow-typed/**/*',
     ],
     coverageDirectory: 'coverage',
     coverageReporters: ['json', 'text', 'lcov', 'clover'],
@@ -30,8 +28,9 @@ module.exports = {
     globals: {
         ...eslint.globals,
     },
+    resolver: 'jest-pnp-resolver',
     moduleDirectories: [...config.modules],
-    moduleFileExtensions: ['js', 'json', 'jsx', 'ts', 'tsx', 'node'],
+    moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'node'],
     moduleNameMapper: {
         '.*\\.(css|less|styl|scss|sass)$': '<rootDir>/config/testing/mocks/cssModule.js',
         '.*\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
@@ -39,13 +38,21 @@ module.exports = {
     },
     modulePathIgnorePatterns: ['<rootDir>/build/'],
     prettierPath: '<rootDir>/node_modules/prettier',
-    setupFiles: ['raf/polyfill'],
-    setupFilesAfterEnv: ['<rootDir>/config/testing/test-bundler.js'],
-    testEnvironment: 'jest-environment-jsdom',
-    testRegex: '/tests/.*?\\.(test|spec)\\.js$',
+    setupFiles: ['@babel/polyfill', 'react-app-polyfill/jsdom'],
+    // setupFilesAfterEnv: ['<rootDir>/config/testing/test-bundler.js'],
+    testEnvironment: 'jsdom',
+    testMatch: [
+        '<rootDir>/src/**/tests/**/*.{js,jsx,ts,tsx}',
+        '<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}',
+    ],
     testURL: 'http://localhost',
-    timers: 'real',
     transform: {
-        '^.+\\.js$': 'babel-jest',
+        '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
+        '^.+\\.css$': '<rootDir>/config/testing/cssTransform.js',
+        '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '<rootDir>/config/testing/fileTransform.js',
     },
+    transformIgnorePatterns: [
+        '[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$',
+        '^.+\\.module\\.(css|sass|scss)$',
+    ],
 };
