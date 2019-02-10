@@ -12,7 +12,7 @@ module.exports = {
         'src/**/*.{js,jsx,ts,tsx}',
         '!src/**/*.d.ts',
         '!src/**/*.test.{js,jsx,ts,tsx}',
-        '!src/app.js',
+        '!src/app.tsx',
         '!src/*/*/Loadable.{js,jsx}',
     ],
     coverageDirectory: 'coverage',

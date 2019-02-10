@@ -73,7 +73,7 @@ module.exports = {
         });
         actions.push({
             type: 'modify',
-            path: '../../src/app.js',
+            path: '../../src/app.tsx',
             pattern: /(import\('intl\/locale-data\/jsonp\/[a-z]+\.js'\),\n)(?!.*import\('intl\/locale-data\/jsonp\/[a-z]+\.js'\),)/g,
             templateFile: './language/polyfill-intl-locale.hbs',
         });
