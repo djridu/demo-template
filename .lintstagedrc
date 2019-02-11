@@ -3,12 +3,15 @@
     "**/*.+(js|jsx)": [
       "eslint --fix",
       "git add",
-      "jest --findRelatedTests"
+      "cross-env NODE_ENV=test jest --bail --findRelatedTests"
     ],
-    "**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)": [
+    "*.css": "stylelint",
+    "*.scss": "stylelint --syntax=scss",
+    "*.less": "stylelint --syntax=less",
+    "**/*.+(js|jsx|ts|tsx|json|yml|yaml|css|less|scss|md|graphql|mdx)": [
       "prettier --write",
       "git add"
-    ]
+    ],
   },
-  "ignore": ["**/build/*"]
+  "ignore": ["**/build/*", "**/node_modules/*"]
 }

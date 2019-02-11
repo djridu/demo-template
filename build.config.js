@@ -66,7 +66,7 @@ module.exports = {
     alias: {},
     modules: ['node_modules', 'packages', 'src', 'src/modules/view'],
     mainFields: ['browser', 'jsnext:main', 'main'],
-    aliasResolveExtensions: ['.js', '.jsx', '.react.js'],
+    aliasResolveExtensions: ['.js', '.jsx'],
     devServer: {
         port: 8094,
         host: 'localhost',

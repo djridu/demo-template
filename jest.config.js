@@ -11,9 +11,7 @@ module.exports = {
     collectCoverageFrom: [
         'src/**/*.{js,jsx}',
         '!src/**/*.test.{js,jsx}',
-        '!src/*/RbGenerated*/*.{js,jsx}',
         '!src/app.js',
-        '!src/global-styles.js',
         '!src/*/*/Loadable.{js,jsx}',
         '!flow-typed/**/*',
     ],
@@ -30,8 +28,9 @@ module.exports = {
     globals: {
         ...eslint.globals,
     },
+    resolver: 'jest-pnp-resolver',
     moduleDirectories: [...config.modules],
-    moduleFileExtensions: ['js', 'json', 'jsx', 'ts', 'tsx', 'node'],
+    moduleFileExtensions: ['js', 'jsx', 'json', 'node'],
     moduleNameMapper: {
         '.*\\.(css|less|styl|scss|sass)$': '<rootDir>/config/testing/mocks/cssModule.js',
         '.*\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
@@ -39,13 +38,21 @@ module.exports = {
     },
     modulePathIgnorePatterns: ['<rootDir>/build/'],
     prettierPath: '<rootDir>/node_modules/prettier',
-    setupFiles: ['raf/polyfill'],
-    setupFilesAfterEnv: ['<rootDir>/config/testing/test-bundler.js'],
-    testEnvironment: 'jest-environment-jsdom',
-    testRegex: '/tests/.*?\\.(test|spec)\\.js$',
+    setupFiles: ['@babel/polyfill', 'react-app-polyfill/jsdom'],
+    // setupFilesAfterEnv: ['<rootDir>/config/testing/test-bundler.js'],
+    testEnvironment: 'jsdom',
+    testMatch: [
+        '<rootDir>/src/**/tests/**/*.{js,jsx}',
+        '<rootDir>/src/**/?(*.)(spec|test).{js,jsx}',
+    ],
     testURL: 'http://localhost',
-    timers: 'real',
     transform: {
-        '^.+\\.js$': 'babel-jest',
+        '^.+\\.(js|jsx)$': '<rootDir>/node_modules/babel-jest',
+        '^.+\\.css$': '<rootDir>/config/testing/cssTransform.js',
+        '^(?!.*\\.(js|jsx|css|json)$)': '<rootDir>/config/testing/fileTransform.js',
     },
+    transformIgnorePatterns: [
+        '[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$',
+        '^.+\\.module\\.(css|sass|scss)$',
+    ],
 };
