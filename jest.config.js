@@ -40,6 +40,7 @@ module.exports = {
     prettierPath: '<rootDir>/node_modules/prettier',
     setupFiles: ['@babel/polyfill', 'react-app-polyfill/jsdom'],
     // setupFilesAfterEnv: ['<rootDir>/config/testing/test-bundler.js'],
+    setupFilesAfterEnv: ['react-testing-library/cleanup-after-each'],
     testEnvironment: 'jsdom',
     testMatch: [
         '<rootDir>/src/**/tests/**/*.{js,jsx}',
