@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import imageFile from './logo.png';
 
 class Button extends Component {
     render() {
-        return <div>{this.props.children}</div>;
+        return (
+            <div>
+                <img src={imageFile} alt="" />
+            </div>
+        );
     }
 }
 

@@ -50,7 +50,11 @@ module.exports = {
             ],
         },
         test: {
-            plugins: ['@babel/transform-modules-commonjs', 'dynamic-import-node'],
+            plugins: [
+                '@babel/transform-modules-commonjs',
+                'dynamic-import-node',
+                'require-context-hook',
+            ],
             sourceMaps: 'both',
         },
     },

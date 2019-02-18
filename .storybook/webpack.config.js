@@ -4,31 +4,22 @@ module.exports = {
     ],
     module: {
         rules: [
-            // {
-            //     test: /.jsx?$/,
-            //     exclude: /node_modules/,
-            //     use: [
-            //         {
-            //             loader: 'babel-loader',
-            //             query: {
-            //                 presets: [
-            //                     '@babel/preset-env',
-            //                     '@babel/preset-react',
-            //                     '@babel/preset-flow',
-            //                 ],
-            //                 babelrc: false,
-            //             },
-            //         },
-            //     ],
-            // },
-            // {
-            //     test: /\.(less|css)$/,
-            //     use: ['style-loader', 'css-loader', 'less-loader'],
-            // },
-            // {
-            //     test: /\.(jpe?g|png|gif|svg)$/i,
-            //     use: ['url-loader', 'img-loader'],
-            // },
+            {
+                test: /\.stories\.jsx?$/,
+                loaders: [require.resolve('@storybook/addon-storysource/loader')],
+                enforce: 'pre',
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 1,
+                        },
+                    },
+                ],
+            },
         ],
     },
 };
