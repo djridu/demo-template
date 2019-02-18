@@ -216,21 +216,6 @@ export default function({ env, paths, utils }) {
                     use: 'html-loader',
                 },
                 {
-                    test: regexImgToFile,
-                    issuer: {
-                        test: /\.js$/,
-                    },
-                    use: [
-                        '@svgr/webpack',
-                        {
-                            loader: 'file-loader',
-                            options: {
-                                name: config.outputs.assetName[env.getModeNaming()],
-                            },
-                        },
-                    ],
-                },
-                {
                     loader: require.resolve('file-loader'),
                     exclude: [/\.(js|mjs|jsx)$/, /\.html$/, /\.json$/],
                     options: {

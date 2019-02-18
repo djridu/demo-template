@@ -48,24 +48,24 @@ export const getNode = () => ({
     child_process: 'empty',
 });
 
-export const getStats = ({ paths }) => ({
-    // assets: env.isVerbose(),
-    // cached: env.isVerbose(),
-    // cachedAssets: env.isVerbose(),
-    // chunks: env.isVerbose(),
-    // chunkModules: env.isVerbose(),
+export const getStats = ({ paths, env }) => ({
+    assets: env.isVerbose(),
+    cached: env.isVerbose(),
+    cachedAssets: env.isVerbose(),
+    chunks: env.isVerbose(),
+    chunkModules: env.isVerbose(),
     colors: true,
-    // hash: env.isVerbose(),
-    // modules: env.isVerbose(),
-    // reasons: env.isDebug(),
-    // timings: true,
-    // builtAt: true,
+    hash: env.isVerbose(),
+    modules: env.isVerbose(),
+    reasons: env.isDebug(),
+    timings: true,
+    builtAt: true,
     context: paths.SRC_DIR,
-    // errors: true,
-    // errorDetails: true,
-    // performance: true,
-    // version: true,
-    // warnings: true,
+    errors: true,
+    errorDetails: true,
+    performance: true,
+    version: true,
+    warnings: true,
 });
 
 export const getPerformance = ({ env }) => {
