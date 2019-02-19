@@ -5,32 +5,6 @@ import { action } from '@storybook/addon-actions';
 import { withBackgrounds } from '@storybook/addon-backgrounds';
 import Checkbox from './index';
 
-class CheckboxStateful extends React.Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            value: this.props.value,
-        };
-
-        this.onCheckboxChange = this.onCheckboxChange.bind(this);
-    }
-
-    onCheckboxChange(value) {
-        this.setState({ value });
-
-        this.props.onCheckboxChange(value);
-    }
-
-    render() {
-        return (
-            <Checkbox value={this.state.value} onCheckboxChange={this.onCheckboxChange}>
-                {this.props.children}
-            </Checkbox>
-        );
-    }
-}
-
 storiesOf('Checkbox', module)
     .addDecorator(
         withBackgrounds([
@@ -44,9 +18,9 @@ storiesOf('Checkbox', module)
         const onCheckboxChange = action('toggle');
 
         return (
-            <CheckboxStateful value={value} onCheckboxChange={onCheckboxChange}>
+            <Checkbox value={value} onCheckboxChange={onCheckboxChange}>
                 {children}
-            </CheckboxStateful>
+            </Checkbox>
         );
     })
     .add('with iphone6 Plus', () => {
@@ -55,8 +29,8 @@ storiesOf('Checkbox', module)
         const onCheckboxChange = action('toggle');
 
         return (
-            <CheckboxStateful value={value} onCheckboxChange={onCheckboxChange}>
+            <Checkbox value={value} onCheckboxChange={onCheckboxChange}>
                 {children}
-            </CheckboxStateful>
+            </Checkbox>
         );
     });

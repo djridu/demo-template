@@ -1,24 +1,19 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-export class Checkbox extends Component {
-    constructor(props) {
-        super(props);
+export const Checkbox = props => {
+    const { value, onCheckboxChange, children } = props;
+    const [state, setState] = useState(value);
 
-        this.handleChange = this.handleChange.bind(this);
-    }
+    const handleChange = event => {
+        const { checked } = event.target;
+        setState(checked);
+        onCheckboxChange(checked);
+    };
 
-    handleChange(event) {
-        this.props.onCheckboxChange(event.target.checked);
-    }
-
-    render() {
-        const { value, children } = this.props;
-
-        return (
-            <label>
-                {children}:
-                <input type="checkbox" checked={value} onChange={this.handleChange} />
-            </label>
-        );
-    }
-}
+    return (
+        <label>
+            {children}:
+            <input type="checkbox" checked={state} onChange={handleChange} />
+        </label>
+    );
+};
