@@ -1,18 +1,15 @@
 export const breakpoints = {
     xSmall: {
-        type: 'mobile',
         device: 'iPhone 5/SE',
         height: 568,
         width: 320,
     },
     small: {
-        type: 'mobile',
         device: 'iPhone 6/7',
         height: 667,
         width: 375,
     },
     smallMedium: {
-        type: 'mobile',
         device: 'iPhone 6/7 Plus',
         height: 736,
         width: 414,

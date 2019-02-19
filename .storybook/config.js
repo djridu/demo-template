@@ -2,11 +2,11 @@ import { configure, addDecorator } from '@storybook/react';
 import { withOptions } from '@storybook/addon-options';
 import { configureViewport, INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { withKnobs } from '@storybook/addon-knobs';
-import centered from '@storybook/addon-centered';
+// import centered from '@storybook/addon-centered';
 
 import newViewports from './viewports';
 
-addDecorator(centered);
+// addDecorator(centered);
 addDecorator(withKnobs);
 addDecorator(
     withOptions({
@@ -22,7 +22,7 @@ addDecorator(
         hierarchyRootSeparator: null,
         sidebarAnimations: true,
         selectedAddonPanel: undefined,
-        enableShortcuts: false,
+        enableShortcuts: true,
     }),
 );
 

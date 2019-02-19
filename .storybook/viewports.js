@@ -6,12 +6,11 @@ function viewports() {
         breakpoints,
         (breakpoint, value, key) => {
             breakpoint[key] = {
-                name: key,
+                name: value.device,
                 styles: {
                     width: `${value.width}px`,
                     height: `${value.height}px`,
                 },
-                type: `${value.type}`,
             };
             return breakpoint;
         },
