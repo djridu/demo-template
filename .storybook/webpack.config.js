@@ -1,5 +1,7 @@
+const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
     plugins: [
+        new CopyPlugin([{ from: 'src/img/', to: 'img' }]),
         // your custom plugins
     ],
     module: {
