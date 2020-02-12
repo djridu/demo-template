@@ -1,5 +1,13 @@
 /**
  * app.js
+ *//**
+ * app.js
+ *//**
+ * app.js
+ *//**
+ * app.js
+ *//**
+ * app.js
  */
 
 import { connectRouter, routerMiddleware } from 'connected-react-router';
